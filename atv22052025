@@ -1,0 +1,9 @@
+def validar_string_com_inteiro(s):
+    for palavra in s.split():
+        if palavra.isdigit():
+            print("String válida:", s)
+            return
+    print("Erro: a string deve conter pelo menos um número inteiro.")
+
+entrada = input("Digite uma string com um número inteiro: ")
+validar_string_com_inteiro(entrada)
