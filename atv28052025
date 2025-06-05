@@ -1,0 +1,15 @@
+lista = []
+
+while True:
+    num = int(input("Digite um número (0 para sair): "))
+    if num == 0:
+        break
+
+    for i in range(len(lista)):
+        if num <= lista[i]:
+            lista.insert(i, num)
+            break
+    else:
+        lista.append(num)
+
+print("Lista final:", lista)
