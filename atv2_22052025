@@ -1,0 +1,11 @@
+linha = input("Digite três números separados por espaço: ")
+
+numeros = list(map(int, linha.strip().split()))
+
+if len(numeros) != 3:
+    print("Erro: você deve digitar exatamente três números.")
+else:
+    A, B, C = numeros
+    print("A:", A)
+    print("B:", B)
+    print("C:", C)
